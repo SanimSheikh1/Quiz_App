@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/quiz_1_Fragment">
+
+    <fragment
+        android:id="@+id/quiz_1_Fragment"
+        android:name="com.example.quizapp.Quiz_1_Fragment"
+        android:label="fragment_quiz_1_"
+        tools:layout="@layout/fragment_quiz_1_" >
+        <action
+            android:id="@+id/action_quiz_1_Fragment_to_quiz_2_Fragment"
+            app:destination="@id/quiz_2_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quiz_2_Fragment"
+        android:name="com.example.quizapp.Quiz_2_Fragment"
+        android:label="fragment_quiz_2_"
+        tools:layout="@layout/fragment_quiz_2_" >
+        <action
+            android:id="@+id/action_quiz_2_Fragment_to_qus_3_Fragment"
+            app:destination="@id/qus_3_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qus_3_Fragment"
+        android:name="com.example.quizapp.Qus_3_Fragment"
+        android:label="fragment_qus_3_"
+        tools:layout="@layout/fragment_qus_3_" >
+        <action
+            android:id="@+id/action_qus_3_Fragment_to_qus_4_Fragment"
+            app:destination="@id/qus_4_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qus_4_Fragment"
+        android:name="com.example.quizapp.Qus_4_Fragment"
+        android:label="fragment_qus_4_"
+        tools:layout="@layout/fragment_qus_4_" >
+        <action
+            android:id="@+id/action_qus_4_Fragment_to_qus_5_Fragment"
+            app:destination="@id/qus_5_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qus_5_Fragment"
+        android:name="com.example.quizapp.Qus_5_Fragment"
+        android:label="fragment_qus_5_"
+        tools:layout="@layout/fragment_qus_5_" >
+        <action
+            android:id="@+id/action_qus_5_Fragment_to_qus_6_Fragment"
+            app:destination="@id/qus_6_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qus_6_Fragment"
+        android:name="com.example.quizapp.Qus_6_Fragment"
+        android:label="fragment_qus_6_"
+        tools:layout="@layout/fragment_qus_6_" />
+</navigation>
